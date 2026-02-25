@@ -148,23 +148,33 @@ h6 {
   position: relative;
 }
 
-.freccia {
-  /*da ruotare 45%*/
-  background-color: white;
-  padding: 2rem;
-  border: 1px solid black;
+.fbianca {
   width: 3rem;
   height: 3rem;
-  display: flex;
+  padding: 2rem;
+  background-color: white;
   transform: rotate(45deg);
   position: absolute;
   bottom: -50%;
   left: 50%;
 }
 
+.freccia {
+  display: flex;
+  position: absolute;
+  bottom: -45%;
+  left: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
 .arancioi {
   font-size: 2.5rem;
   color: #E8A631;
+}
+
+.arancioi:hover {
+  color: #000;
 }
 
 /*button*/
@@ -181,3 +191,5 @@ button {
   cursor: pointer;
   margin-bottom: 30px;
 }
+
+/*section 2*/

@@ -229,3 +229,46 @@ h4 {
   font-size: 3rem;
   margin: 10px;
 }
+
+/* section 3*/
+
+.sec3 {
+  display: flex;
+}
+
+.beige {
+  background-color: #FDF5EB;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.orange {
+  background-color: #E9A636;
+  padding: 10rem;
+  z-index: 1;
+}
+
+.fleximg {
+  display: flex;
+  position: relative;
+  margin: 200px;
+}
+
+.imgc1 {
+  position: absolute;
+  left: -35%;
+  top: -15%;
+  border-radius: 5px;
+}
+
+.imgc2 {
+  position: absolute;
+  right: -35%;
+  bottom: -15%;
+  border-radius: 5px;
+}
+
+.text3 {
+  margin-top: 120px;
+  margin-right: 100px;
+}

@@ -80,7 +80,7 @@ nav {
   display: block;
 }
 
-.phone {
+.arancio {
   color: #E8A631;
 }
 
@@ -145,6 +145,10 @@ h6 {
 .partie1 p {
   color: white;
   font-size: 1.2rem;
+}
+
+.freccia {
+  /*da ruotare 45%*/
 }
 
 /*button*/

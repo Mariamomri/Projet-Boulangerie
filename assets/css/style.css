@@ -157,7 +157,6 @@ h6 {
   position: absolute;
   bottom: -54%;
   left: 50%;
-  border: 1px solid black;
 }
 
 .freccia {
@@ -507,4 +506,71 @@ h4 {
 .card6 p {
   font-size: 1.3rem;
   color: rgb(78, 76, 76)
+}
+
+/*section 7*/
+.sec7 {
+  background-color: #FDF5EB;
+  margin: 100px;
+  border-radius: 5px;
+  margin-top: 200px;
+}
+
+.text7 {
+  text-align: center;
+  padding: 50px;
+}
+
+.text7 h4 {
+  margin: 0px;
+}
+
+/*listcards section 7*/
+.listcard7 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin: 100px;
+}
+
+.card7 {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.card7:hover {
+  background-color: #E9A636;
+}
+
+.listcard7 img {
+  border-radius: 50%;
+}
+
+.divcercle {
+  border: 1px solid #E9A636;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.textCard {
+  display: flex;
+}
+
+.textCard h4 {
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.flexcolum7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -479,3 +479,32 @@ h4 {
 .sec6 h4 {
   margin: 0px;
 }
+
+.card6 {
+  background-color: #FDF5EB;
+  text-align: center;
+  border-radius: 5px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card6:hover {
+  background-color: #E9A636;
+}
+
+.card6 img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card6 h4 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+
+.card6 p {
+  font-size: 1.3rem;
+  color: rgb(78, 76, 76)
+}

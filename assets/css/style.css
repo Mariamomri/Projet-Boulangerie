@@ -419,15 +419,15 @@ h4 {
 
 .imgc3 {
   position: absolute;
-  left: -20%;
-  top: -2%;
+  left: -35%;
+  top: -15%;
   border-radius: 5px;
 }
 
 .imgc4 {
   position: absolute;
-  right: -25%;
-  bottom: 20%;
+  right: -35%;
+  bottom: 5%;
   border-radius: 5px;
 }
 
@@ -457,8 +457,16 @@ h4 {
 
 .testoOffer {
   display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .flexicon5 h4 {
-  padding: 10px;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  /*  Impedisce al testo di andare a capo */
+}
+
+.testoOffer p {
+  margin-top: 0px;
 }

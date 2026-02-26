@@ -155,14 +155,15 @@ h6 {
   background-color: white;
   transform: rotate(45deg);
   position: absolute;
-  bottom: -50%;
+  bottom: -54%;
   left: 50%;
+  border: 1px solid black;
 }
 
 .freccia {
   display: flex;
   position: absolute;
-  bottom: -45%;
+  bottom: -49%;
   left: 50%;
   padding: 0.5rem;
   cursor: pointer;
@@ -341,7 +342,7 @@ h4 {
 
 
 /*listcard section 4*/
-.listcard {
+.listcard2 {
   display: flex;
   gap: 30px;
   justify-content: space-between;
@@ -373,12 +374,91 @@ h4 {
 }
 
 h4 {
-  margin: 10px 0;
-  font-size: 1.3rem;
+  margin: 35px 0;
+  font-size: 2.36rem;
+
 }
 
 .textCard p {
   color: grey;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+/* section 5*/
+
+.flexsec5 {
+  display: flex;
+  margin: 100px;
+  gap: 80px;
+}
+
+.column5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.beige2 {
+  background-color: #FDF5EB;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.orange {
+  background-color: #E9A636;
+  z-index: 1;
+}
+
+.fleximg2 {
+  display: flex;
+  position: relative;
+  margin: 90px;
+
+}
+
+.imgc3 {
+  position: absolute;
+  left: -20%;
+  top: -2%;
+  border-radius: 5px;
+}
+
+.imgc4 {
+  position: absolute;
+  right: -25%;
+  bottom: 20%;
+  border-radius: 5px;
+}
+
+.text3 {
+  margin-top: 120px;
+  margin-right: 150px;
+}
+
+.check3 {
+  display: flex;
+  gap: 10rem;
+}
+
+.divicon {
+  color: white;
+  background-color: #E9A636;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 10px;
+}
+
+.flexicon5 {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.testoOffer {
+  display: flex;
+}
+
+.flexicon5 h4 {
+  padding: 10px;
 }

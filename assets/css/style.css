@@ -329,3 +329,12 @@ h4 {
   transform: scaleX(-1);
   margin: 10px;
 }
+
+.text4 {
+  text-align: center;
+  margin: 100px;
+}
+
+.text4 h4 {
+  margin: 0px;
+}

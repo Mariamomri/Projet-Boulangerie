@@ -427,7 +427,7 @@ h4 {
 .imgc4 {
   position: absolute;
   right: -35%;
-  bottom: 5%;
+  bottom: 8%;
   border-radius: 5px;
 }
 
@@ -469,4 +469,13 @@ h4 {
 
 .testoOffer p {
   margin-top: 0px;
+}
+
+/* section 6*/
+.sec6 {
+  text-align: center;
+}
+
+.sec6 h4 {
+  margin: 0px;
 }

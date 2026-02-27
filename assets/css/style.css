@@ -643,3 +643,24 @@ h4 {
   border: none;
   background-color: transparent;
 }
+
+/* footer */
+footer {
+  background: black;
+  color: white;
+  padding: 3rem 0 2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footert {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.12em;
+  color: white;
+}

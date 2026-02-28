@@ -167,6 +167,8 @@ h6 {
   margin: 0px;
   padding: 0px;
   width: 100%;
+  filter: brightness(50%);
+  /* scurisce l'immagine */
 }
 
 .partie1 p {

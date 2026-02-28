@@ -9,6 +9,7 @@ header {
   background-color: black;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .nav {
@@ -135,11 +136,37 @@ h6 {
 
 /* section 1*/
 .partie1 {
-  background-image: url("../../assets/images/carousel-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 13rem;
-  padding-bottom: 15rem;
+  /* padding: 13rem;
+  padding-bottom: 15rem; */
+  position: relative;
+  padding: 0px;
+}
+
+.article1 {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 10%;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .slide {
+  display: none;
+  width: 100%;
+}
+
+.carousel .slide.active {
+  display: block;
+}
+
+.carousel img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 
 .partie1 p {
@@ -155,14 +182,14 @@ h6 {
   background-color: white;
   transform: rotate(45deg);
   position: absolute;
-  bottom: -54%;
+  bottom: -55%;
   left: 50%;
 }
 
 .freccia {
   display: flex;
   position: absolute;
-  bottom: -49%;
+  bottom: -51%;
   left: 50%;
   padding: 0.5rem;
   cursor: pointer;

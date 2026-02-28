@@ -96,13 +96,26 @@ document.querySelectorAll(".card6").forEach((card) => {
 /* hover & transition cards price*/
 
 document.querySelectorAll(".sec4").forEach((card) => {
+  const textCard = card.querySelector(".textCard");
+  const icon = card.querySelector(".occhio");
   const overlay = card.querySelector(".overlay2");
 
   card.addEventListener("mouseenter", () => {
+    icon.style.transform = "translateY(0)";
+    icon.style.opacity = "1";
+    textCard.style.backgroundColor = "#E9A636";
+    textCard.style.color = "white";
+
     overlay.style.height = "100%";
+    overlay.style.opacity = "1";
   });
 
   card.addEventListener("mouseleave", () => {
     overlay.style.height = "0";
+    overlay.style.opacity = "0";
+    icon.style.transform = "translateY(-40px)";
+    icon.style.opacity = "0";
+    textCard.style.backgroundColor = "";
+    textCard.style.color = "black";
   });
 });

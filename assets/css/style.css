@@ -395,11 +395,17 @@ h4 {
 
 .textCard {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.price p {
-  font-weight: bold;
-  margin: 0;
+.price {
+  border: 1px solid #E9A636;
+  border-radius: 50px;
+  margin-left: 105px;
+  margin-right: 105px;
+  padding: 5px;
 }
 
 h4 {
@@ -410,8 +416,14 @@ h4 {
 
 .textCard p {
   color: grey;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.4;
+  font-weight: lighter;
+}
+
+.price p {
+  margin: 0px;
+  font-size: 1.2rem;
 }
 
 /* section 5*/

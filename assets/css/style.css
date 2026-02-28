@@ -538,6 +538,7 @@ h4 {
 
 .textcouchi {
   text-align: center;
+  background-color: #FDF5EB;
   padding: 10px 0;
   transition: transform 0.8s ease,
     opacity 0.5s ease;

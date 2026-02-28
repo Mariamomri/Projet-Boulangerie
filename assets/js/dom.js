@@ -71,7 +71,7 @@ cards.forEach((card) => {
   });
 });
 
-/* hover card social media */
+/* hover & transition card social media */
 document.querySelectorAll(".card6").forEach((card) => {
   const overlay = card.querySelector(".overlay");
   const text = card.querySelector(".textcouchi");
@@ -82,7 +82,7 @@ document.querySelectorAll(".card6").forEach((card) => {
   card.addEventListener("mouseenter", () => {
     overlay.style.height = "170px";
     overlay.style.backgroundColor = "#E8A631";
-    text.style.transform = "translateY(-150px)";
+    text.style.transform = "translateY(-170px)";
     icon.style.transform = "translateY(0px)";
   });
 

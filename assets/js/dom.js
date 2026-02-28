@@ -92,3 +92,17 @@ document.querySelectorAll(".card6").forEach((card) => {
     text.style.transform = "translateY(0)";
   });
 });
+
+/* hover & transition cards price*/
+
+document.querySelectorAll(".sec4").forEach((card) => {
+  const overlay = card.querySelector(".overlay2");
+
+  card.addEventListener("mouseenter", () => {
+    overlay.style.height = "100%";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    overlay.style.height = "0";
+  });
+});

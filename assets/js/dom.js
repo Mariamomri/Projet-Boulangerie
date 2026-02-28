@@ -33,3 +33,23 @@ if (backicon) {
 if (nexticon) {
   nexticon.addEventListener("click", () => showSlide(currentIndex + 1));
 }
+
+/* hover by click */
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach((l) => (l.style.color = "")); // reset
+    link.style.color = "#E8A631"; // arancione
+  });
+});
+
+/* hover by survol */
+// navLinks.forEach((link) => {
+//   link.addEventListener("mouseover", () => {
+//     link.style.color = "#E8A631"; // arancione
+//   });
+//   link.addEventListener("mouseout", () => {
+//     link.style.color = ""; // reset
+//   });
+// });

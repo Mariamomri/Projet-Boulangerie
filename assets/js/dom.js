@@ -97,25 +97,41 @@ document.querySelectorAll(".card6").forEach((card) => {
 
 document.querySelectorAll(".sec4").forEach((card) => {
   const textCard = card.querySelector(".textCard");
+  const p = textCard.querySelector(".textCard p");
   const icon = card.querySelector(".occhio");
   const overlay = card.querySelector(".overlay2");
+  const occhiodiv = card.querySelector(".occhiodiv");
+  const price = card.querySelector(".price");
+  const bb = card.querySelector(".bb p");
 
   card.addEventListener("mouseenter", () => {
+    card.classList.add("active"); // aggiunto una classe
     icon.style.transform = "translateY(0)";
+    occhiodiv.style.transform = "translateY(100px)";
     icon.style.opacity = "1";
     textCard.style.backgroundColor = "#E9A636";
     textCard.style.color = "white";
-
     overlay.style.height = "100%";
     overlay.style.opacity = "1";
+    occhiodiv.style.border = "1px solid white";
+    price.style.border = "1px solid white";
+    textCard.style.color = "white";
+    p.style.color = "white";
+    bb.style.color = "white";
   });
 
   card.addEventListener("mouseleave", () => {
+    card.classList.remove("active");
     overlay.style.height = "0";
     overlay.style.opacity = "0";
     icon.style.transform = "translateY(-40px)";
     icon.style.opacity = "0";
     textCard.style.backgroundColor = "";
     textCard.style.color = "black";
+    occhiodiv.style.border = "";
+    price.style.border = "";
+    textCard.style.color = "";
+    p.style.color = "grey";
+    bb.style.color = "grey";
   });
 });

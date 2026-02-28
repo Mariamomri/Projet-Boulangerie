@@ -72,23 +72,23 @@ cards.forEach((card) => {
 });
 
 /* hover card social media */
-document.querySelectorAll(".textcouchi").forEach((card) => {
+document.querySelectorAll(".card6").forEach((card) => {
   const overlay = card.querySelector(".overlay");
-  const info = card.querySelector(".social-icons");
   const text = card.querySelector(".textcouchi");
+  const icon = card.querySelector(".social-icons");
 
-  if (!overlay || !info) return; // evita errori nelle card senza overlay
+  if (!overlay || !icon) return; // evita errori nelle card senza overlay
 
   card.addEventListener("mouseenter", () => {
     overlay.style.height = "170px";
     overlay.style.backgroundColor = "#E8A631";
-    info.style.transform = "translateY(-120px)";
-    if (text) text.style.display = "none";
+    text.style.transform = "translateY(-150px)";
+    icon.style.transform = "translateY(0px)";
   });
 
   card.addEventListener("mouseleave", () => {
     overlay.style.height = "0";
-    info.style.transform = "translateY(0)";
-    if (text) text.style.display = "block";
+    icon.style.transform = "translateY(50px)";
+    text.style.transform = "translateY(0)";
   });
 });

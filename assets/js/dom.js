@@ -70,3 +70,25 @@ cards.forEach((card) => {
     card.style.boxShadow = "";
   });
 });
+
+/* hover card social media */
+document.querySelectorAll(".textcouchi").forEach((card) => {
+  const overlay = card.querySelector(".overlay");
+  const info = card.querySelector(".social-icons");
+  const text = card.querySelector(".textcouchi");
+
+  if (!overlay || !info) return; // evita errori nelle card senza overlay
+
+  card.addEventListener("mouseenter", () => {
+    overlay.style.height = "170px";
+    overlay.style.backgroundColor = "#E8A631";
+    info.style.transform = "translateY(-120px)";
+    if (text) text.style.display = "none";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    overlay.style.height = "0";
+    info.style.transform = "translateY(0)";
+    if (text) text.style.display = "block";
+  });
+});

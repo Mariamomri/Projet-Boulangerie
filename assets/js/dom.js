@@ -135,3 +135,44 @@ document.querySelectorAll(".sec4").forEach((card) => {
     bb.style.color = "grey";
   });
 });
+
+/*carousel en bas */
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".carousel-track");
+  const cards = document.querySelectorAll(".card7");
+  const nextBtn = document.querySelectorAll(".butcerchio")[1];
+  const prevBtn = document.querySelectorAll(".butcerchio")[0];
+
+  let index = 0;
+  const cardWidth = 400 + 32; // larghezza card + gap
+  const visibleCards = 3;
+  const totalCards = cards.length;
+
+  function updateActiveCenter() {
+    cards.forEach((card) => card.classList.remove("active-center"));
+
+    const centerIndex = index + 1; // la card centrale è sempre la seconda visibile
+
+    if (cards[centerIndex]) {
+      cards[centerIndex].classList.add("active-center");
+    }
+  }
+
+  updateActiveCenter();
+
+  nextBtn.addEventListener("click", () => {
+    if (index < totalCards - visibleCards) {
+      index++;
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+      updateActiveCenter();
+    }
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (index > 0) {
+      index--;
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+      updateActiveCenter();
+    }
+  });
+});

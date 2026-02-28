@@ -626,18 +626,24 @@ h4 {
 }
 
 /*listcards section 7*/
-.listcard7 {
+.carousel-window {
+  width: 100%;
+  max-width: 1160px; /* 3 card */
+  overflow: hidden;
+  margin: auto;
+}
+
+.carousel-track {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem;
-  margin: 100px;
-  margin-bottom: 0px;
+  gap: 2rem;
+  transition: transform 0.5s ease;
 }
 
 .card7 {
   background-color: white;
   border-radius: 5px;
+  padding: 1rem;
+  width: 400px;
 }
 
 .card7:hover {
@@ -657,17 +663,59 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  margin-bottom: 10px;
 }
 
-.textCard {
+.textCard7 {
   display: flex;
+
 }
 
-.textCard h4 {
+.textCard7 h4 {
   margin: 0px;
   white-space: nowrap;
 }
+
+.card7 p {
+  margin: 0px;
+  color: gray;
+}
+
+.card7.active-center {
+  background-color: #E9A636 !important;
+  color: white !important;
+}
+
+.card7.active-center * {
+  color: white !important;
+}
+
+.card7.active-center .divcercle {
+  border-color: white !important;
+}
+
+.tc {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: start;
+  align-items: start;
+  margin-left: 20px;
+  padding: 0px;
+  margin-top: 5px;
+}
+
+.tc h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.3rem;
+  margin-right: 110px;
+}
+
+.tc p {
+  margin: 0;
+  color: gray;
+}
+
 
 .flexcolum7 {
   display: flex;

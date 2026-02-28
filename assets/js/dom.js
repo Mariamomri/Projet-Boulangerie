@@ -53,3 +53,20 @@ navLinks.forEach((link) => {
 //     link.style.color = ""; // reset
 //   });
 // });
+
+/* hover card by survol */
+const cards = document.querySelectorAll(".listcard .card");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseover", () => {
+    card.style.backgroundColor = "white";
+    card.style.transform = "translateY(-5px)";
+    card.style.boxShadow = "0 14px 30px rgba(0, 0, 0, 0.08)";
+  });
+
+  card.addEventListener("mouseout", () => {
+    card.style.backgroundColor = "";
+    card.style.transform = "";
+    card.style.boxShadow = "";
+  });
+});

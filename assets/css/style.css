@@ -184,14 +184,14 @@ h6 {
   background-color: white;
   transform: rotate(45deg);
   position: absolute;
-  bottom: -55%;
+  bottom: -7%;
   left: 50%;
 }
 
 .freccia {
   display: flex;
   position: absolute;
-  bottom: -51%;
+  bottom: -3%;
   left: 50%;
   padding: 0.5rem;
   cursor: pointer;
@@ -210,15 +210,16 @@ h6 {
 button {
   background-color: #E9A636;
   color: white;
-  padding: 1rem;
   border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-radius: 50px;
   cursor: pointer;
   margin-bottom: 30px;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 /*section 2*/
@@ -243,11 +244,11 @@ button {
     border-color 0.15s ease;
 }
 
-.card:hover {
+/* .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
   background-color: white;
-}
+} */
 
 h4 {
   font-size: 2rem;

@@ -176,3 +176,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+/* back to top button */
+(function () {
+  const btn = document.getElementById("backToTop");
+  const showAfter = 300; // px
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > showAfter) {
+      btn.classList.add("visible");
+    } else {
+      btn.classList.remove("visible");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    // Animation de remontée douce
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+})();

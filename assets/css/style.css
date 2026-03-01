@@ -37,6 +37,19 @@ nav {
   align-items: center;
 }
 
+/* Navbar inizialmente trasparente */
+header {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar dopo lo scroll */
+header.scrolled {
+  background-color: black;
+}
+
+
+
 /* menu dropdown */
 
 /* Contenitore del dropdown */

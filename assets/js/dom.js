@@ -23,24 +23,63 @@ document.querySelectorAll(".container p").forEach((p) => {
 });
 
 /* Carousel */
-const slides = document.querySelectorAll(".carousel .slide");
-let currentIndex = 0;
+const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".nexticon");
+const prevBtn = document.querySelector(".backicon");
 
-function showSlide(index) {
-  currentIndex = (index + slides.length) % slides.length;
-  slides.forEach((s) => s.classList.remove("active"));
-  slides[currentIndex].classList.add("active");
+let index = 0;
+let isAnimating = false;
+const speed = 800;
+
+function goToSlide(newIndex, direction) {
+  if (isAnimating) return;
+  isAnimating = true;
+
+  const current = slides[index];
+  const next = slides[newIndex];
+
+  // Reset classi
+  slides.forEach((s) => {
+    s.classList.remove("active", "exit-left", "exit-right");
+    s.style.transform = "";
+  });
+
+  // Posizione iniziale della nuova slide
+  if (direction === "next") {
+    next.style.transform = "translateX(100%)";
+  } else {
+    next.style.transform = "translateX(-100%)";
+  }
+
+  // Forza reflow
+  void next.offsetWidth;
+
+  // Uscita della slide attuale
+  if (direction === "next") {
+    current.classList.add("exit-left");
+  } else {
+    current.classList.add("exit-right");
+  }
+
+  // Entrata della nuova slide
+  next.classList.add("active");
+  next.style.transform = "translateX(0)";
+
+  setTimeout(() => {
+    index = newIndex;
+    isAnimating = false;
+  }, speed);
 }
 
-const backicon = document.querySelector(".backicon");
-const nexticon = document.querySelector(".nexticon");
+nextBtn.addEventListener("click", () => {
+  let newIndex = (index + 1) % slides.length;
+  goToSlide(newIndex, "next");
+});
 
-if (backicon) {
-  backicon.addEventListener("click", () => showSlide(currentIndex - 1));
-}
-if (nexticon) {
-  nexticon.addEventListener("click", () => showSlide(currentIndex + 1));
-}
+prevBtn.addEventListener("click", () => {
+  let newIndex = (index - 1 + slides.length) % slides.length;
+  goToSlide(newIndex, "prev");
+});
 
 /* hover by click */
 const navLinks = document.querySelectorAll("nav a");
@@ -212,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
 
-  if (window.scrollY > 100) {
+  if (window.scrollY > 70) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");

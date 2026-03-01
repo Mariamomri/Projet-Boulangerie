@@ -628,7 +628,8 @@ h4 {
 /*listcards section 7*/
 .carousel-window {
   width: 100%;
-  max-width: 1160px; /* 3 card */
+  max-width: 1160px;
+  /* 3 card */
   overflow: hidden;
   margin: auto;
 }
@@ -792,6 +793,38 @@ h4 {
 .email input {
   border: none;
   background-color: transparent;
+}
+
+/* button go back to top */
+#backToTop {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: #E9A636;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  z-index: 60;
+  font-size: 1.5rem;
+}
+
+#backToTop.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 /* footer */

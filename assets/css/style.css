@@ -6,11 +6,21 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  background-color: black;
-  position: sticky;
+  align-items: center;
+  position: fixed;
   top: 0;
-  z-index: 10;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
+
+
+/* Navbar dopo lo scroll */
+header.scrolled {
+  background-color: black;
+}
+
 
 .nav {
   display: flex;
@@ -36,18 +46,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
-/* Navbar inizialmente trasparente */
-header {
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
-
-/* Navbar dopo lo scroll */
-header.scrolled {
-  background-color: black;
-}
-
 
 
 /* menu dropdown */
@@ -158,7 +156,7 @@ h6 {
 .article1 {
   position: absolute;
   z-index: 2;
-  top: 10%;
+  top: 30%;
   left: 10%;
 }
 

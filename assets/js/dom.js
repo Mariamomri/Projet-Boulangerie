@@ -1,8 +1,16 @@
 /* menu dropdown*/
-document.querySelectorAll(".dropdown > a").forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    this.parentElement.classList.toggle("open");
+document.querySelectorAll(".dropdown").forEach((drop) => {
+  let timer;
+
+  drop.addEventListener("mouseenter", () => {
+    clearTimeout(timer);
+    drop.classList.add("open");
+  });
+
+  drop.addEventListener("mouseleave", () => {
+    timer = setTimeout(() => {
+      drop.classList.remove("open");
+    }, 300); // tempo in millisecondi prima di chiudere
   });
 });
 
@@ -204,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
 
-  if (window.scrollY > 50) {
+  if (window.scrollY > 100) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");

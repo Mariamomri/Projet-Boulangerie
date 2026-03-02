@@ -402,6 +402,7 @@ h4 {
 .text4 {
   text-align: center;
   margin: 100px;
+  margin-bottom: 50px;
 }
 
 .text4 h4 {
@@ -603,6 +604,7 @@ h4 {
   margin: 100px;
   margin-top: 0px;
 }
+
 .sec6 {
   text-align: center;
 }

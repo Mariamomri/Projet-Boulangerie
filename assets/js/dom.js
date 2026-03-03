@@ -124,8 +124,6 @@ document.querySelectorAll(".card6").forEach((card) => {
   const text = card.querySelector(".textcouchi");
   const icon = card.querySelector(".social-icons");
 
-  if (!overlay || !icon) return; // evita errori nelle card senza overlay
-
   card.addEventListener("mouseenter", () => {
     overlay.style.height = "170px";
     overlay.style.backgroundColor = "#E8A631";

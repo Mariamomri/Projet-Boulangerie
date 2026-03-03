@@ -219,7 +219,7 @@ h6 {
   transform: rotate(45deg);
   position: absolute;
   bottom: -10%;
-  left: 50%;
+  left: 45%;
   z-index: 3;
 }
 
@@ -227,7 +227,7 @@ h6 {
   display: flex;
   position: absolute;
   bottom: -5%;
-  left: 50%;
+  left: 45%;
   padding: 0.5rem;
   cursor: pointer;
   z-index: 3;

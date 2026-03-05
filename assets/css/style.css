@@ -143,8 +143,6 @@ h6 {
 
 /* section 1*/
 .partie1 {
-  /* padding: 13rem;
-  padding-bottom: 15rem; */
   position: relative;
   padding: 0px;
 }
@@ -812,6 +810,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .wi {
